@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Domine:400,700);
 
 $body-bg: 										#ecf0f1;
-$font-family-sans-serif: 				'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-height:							45px;
+$navbar-height:							60px;
 $navbar-default-bg: 					white;
 $navbar-default-brand-color: 			#c0392b;
 $brand-primary: 						#c0392b;
@@ -18,9 +19,9 @@ $jumbotron-bg: 							white;
 	font-weight: bold;
 }
 
-*{
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-  Helvetica, Arial, "Lucida Grande", sans-serif;
+body{
+
+font-family: 'Montserrat', sans-serif;
 }
 
 .cover-heading {
@@ -62,7 +63,59 @@ body {
   background-image: url(https://unsplash.imgix.net/45/tkLOe7nnQ7mnMsiuijBy_hm.jpg?q=75&fm=jpg&s=77320b2f59f340a0a4d57c34128f2f6e);
 }
 body {
-  color: #fff;
+  color: black;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
+
+.navbar-default .navbar-brand{
+	font-size: 250%;
+	font-weight: 300;
+	color: grey;
+}
+
+ .mastfoot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+.inner{
+	font-size: 100%;
+	color: grey;
+	text-align: center;
+}
+
+
+#pins {
+	margin: 0 auto;
+}
+
+.box {
+	margin: 1%;
+	width: 214px;
+	border-radius: 10px;
+  	border: 3px solid #ffffff;
+  	font-family: 'Domine', serif;
+	font-size: 100%;;
+	font-color: black;
+}
+
+.box img {
+	width: 100%;
+}
+
+.panel-body p {
+	font-family: 'Domine', serif;
+	font-size: 150%;
+	color: purple;
+}
+
+.aboutcontent {
+	font-size: 200%;
+	color: #d3a625;
+	text-align: center;
+	margin: 15% 15%;
+	text-shadow: 1px 1px 1px #000;
+}
+

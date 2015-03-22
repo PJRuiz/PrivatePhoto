@@ -6,10 +6,11 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= render 'layouts/header' %>
+
 </head>
 <body>
 	
-	<%= render 'layouts/header' %>
 	<div class="container">
 		<% flash.each do |name, msg| %>
 			<%= content_tag(:div, msg, class: "alert alert-info") %>
@@ -17,5 +18,13 @@
 		<%= yield %>
 	</div>
 
+		<div class="mastfoot">
+            <div class="inner">
+              <p> Made with Love by Pippa and Pedro</p>
+            </div>
+        </div>
+
 </body>
+
+
 </html>
