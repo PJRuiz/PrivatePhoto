@@ -5,9 +5,18 @@
       <div class="box panel panel-default">
         <%= link_to image_tag(pin.image.url(:medium)), pin %>
         <div class="panel-body">
-          <p><%= pin.description %></p>
-          <p><strong><%= pin.user.name if pin.user %></strong></p>
-          
+          <div class = "profileImage">
+            <div class = "row">
+              <div class = "span7">
+                <p><%= pin.description %></p>
+                <div class = "span1">
+                  <h6> Image goes here</h6>
+                </div>
+
+                <p><strong><%= pin.user.name if pin.user %></strong></p>
+              </div>
+            </div>
+          </div>
           <% if current_user && pin.user == current_user %>
             <div class="actions">
               <%= link_to edit_pin_path(pin) do %>
@@ -19,8 +28,7 @@
                 Delete
               <% end %>
             </div>
-          <% end %>
-          
+          <% end %>   
         </div>
       </div>
     <% end %>
