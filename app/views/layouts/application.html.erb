@@ -10,19 +10,19 @@
 
 </head>
 <body>
-	
+
 	<div class="container">
 		<% flash.each do |name, msg| %>
 			<%= content_tag(:div, msg, class: "alert alert-info") %>
 		<% end %>
 		<%= yield %>
 	</div>
-
 		<div class="mastfoot">
             <div class="inner">
               <p> Made with Love by Pippa and Pedro</p>
             </div>
         </div>
+
 
 </body>
 

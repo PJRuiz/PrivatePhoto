@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Domine:400,700);
+@import url(http://fonts.googleapis.com/css?family=Hind:400,300);
 
 $body-bg: 										#ecf0f1;
 $navbar-height:							60px;
@@ -19,11 +20,6 @@ $jumbotron-bg: 							white;
 	font-weight: bold;
 }
 
-body{
-
-font-family: 'Montserrat', sans-serif;
-}
-
 .cover-heading {
 font-size: 5em;
 letter-spacing: 2px;
@@ -36,6 +32,8 @@ font-weight: 100;
 }
 
 .site-wrapper {
+
+  margin-top: 10%;
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
@@ -43,9 +41,12 @@ font-weight: 100;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
+
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+  background-color: #00b276;
+
 }
 .cover-container {
   margin-right: auto;
@@ -60,12 +61,14 @@ font-weight: 100;
 html,
 body {
   height: 100%;
-  background-image: url(https://unsplash.imgix.net/45/tkLOe7nnQ7mnMsiuijBy_hm.jpg?q=75&fm=jpg&s=77320b2f59f340a0a4d57c34128f2f6e);
+  background-image: url(http://www.psdgraphics.com/file/colorful-triangles-background.jpg);
 }
+
 body {
   color: black;
   text-align: center;
   /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-default .navbar-brand{
@@ -96,7 +99,7 @@ body {
 	width: 214px;
 	border-radius: 10px;
   	border: 3px solid #ffffff;
-  	font-family: 'Domine', serif;
+  	font-family: 'Hind', serif;
 	font-size: 100%;;
 	font-color: black;
 }
@@ -106,7 +109,7 @@ body {
 }
 
 .panel-body p {
-	font-family: 'Domine', serif;
+	font-family: 'Hind', serif;
 	font-size: 150%;
 	color: purple;
 }
@@ -117,5 +120,42 @@ body {
 	text-align: center;
 	margin: 15% 15%;
 	text-shadow: 1px 1px 1px #000;
+}
+
+.cover-heading, .lead {
+	color: white;
+}
+
+.log_in_bt {
+	background-color: #b2003c;
+	border: 1px #b2003c;
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 200%;
+}
+
+.panel-footer, #panelheading,{
+	background-color: #00b276;
+}
+
+.panel-title{
+	color: white;
+}
+
+.form-group{
+	font-family: "Montserrat", sans-serif;
+	font-size: 150%;
+}
+
+#navbar{
+	background-color: #00b276;
+}
+
+#navbar a{
+	color: white;
 }
 
