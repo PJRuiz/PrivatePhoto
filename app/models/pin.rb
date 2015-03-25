@@ -3,6 +3,7 @@ class Pin < ActiveRecord::Base
 
 	has_attached_file :image, 
             :styles => { :medium => "300x300>", :thumb => "100x100>" },
+            :url => ":s3_domain_url"
             :storage => :s3,
             :bucket  => ENV['S3_BUCKET_NAME'],
             :s3_credentials => {
