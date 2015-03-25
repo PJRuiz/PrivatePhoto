@@ -9,9 +9,7 @@ class Pin < ActiveRecord::Base
                     :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
                     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
                 },
-                :s3_permissions => 'private',
-                :url => ":s3_domain_url"
-
+                :s3_permissions => 'private'
 	validates :image, presence: true
 	validates :description, presence: true
 end
